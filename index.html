@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Daniela Torres Beltrán</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg fixed-top" id="barra-navegacion">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#inicio">💀</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuPrincipal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#sobre-mi">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia Laboral</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#educacion">Formación educacional</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Otras habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+                <button id="btn-tema" class="btn btn-sm">Tema Oscuro</button>
+            </div>
+        </div>
+    </nav>
+
+    <main id="contenedor-principal">
+        
+        <header id="inicio">
+            <img src="https://raw.githubusercontent.com/AleinadSerrot/Borrador_web_CV_Danix/refs/heads/master/assets/fotoDani.jpg?token=GHSAT0AAAAAADWBKHBYVWLU7IFBF36ZLSYW2M2FWJQ" alt="foto perfil" id="foto-perfil">
+            <h1>daniela torres beltrán</h1>
+            <h2>psicóloga y full stack java trainee</h2>
+            <p>santiago, chile</p>
+        </header>
+
+        <section id="sobre-mi" class="seccion-animada">
+            <h3>sobre mí</h3>
+            <hr>
+            <p>profesional de la psicología en transición hacia el desarrollo tecnológico. actualmente formándome como full stack java trainee, con gran interés en la creación de aplicaciones web estructuradas, bases de datos y el aprendizaje continuo.</p>
+        </section>
+
+        <section id="experiencia" class="seccion-animada">
+            <h3>experiencia laboral</h3>
+            <hr>
+            
+            <article class="card">
+                <div class="card-body">
+                    <h5 class="card-title">psicóloga</h5>
+                    <h6 class="card-subtitle">diversos centros y atenciones (2020 - 2025)</h6>
+                    <p class="card-text">atención psicológica, evaluación y seguimiento de pacientes. desarrollo de habilidades blandas y resolución de conflictos.</p>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-body">
+                    <h5 class="card-title">desarrolladora full stack trainee</h5>
+                    <h6 class="card-subtitle">proyectos de estudio (2025 - presente)</h6>
+                    <p class="card-text">desarrollo de interfaces de usuario y gestión de bases de datos relacionales en entornos de aprendizaje estructurados.</p>
+                </div>
+            </article>
+        </section>
+
+        <section id="educacion" class="seccion-animada">
+            <h3>formación académica</h3>
+            <hr>
+            <ul class="list-group">
+                <li class="list-group-item"><strong>bootcamp java full stack</strong> - (en curso)</li>
+                <li class="list-group-item"><strong>título profesional de psicóloga</strong> - (titulada)</li>
+            </ul>
+        </section>
+
+        <section id="habilidades" class="seccion-animada">
+            <div id="encabezado-habilidades">
+                <h3>habilidades destacadas</h3>
+                <button id="btn-color" class="btn btn-sm">resaltar</button>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <ul>
+                        <li>html5, css3, bootstrap</li>
+                        <li>javascript, jquery</li>
+                        <li>git, github</li>
+                    </ul>
+                </div>
+                <div class="col-md-6">
+                    <ul>
+                        <li>java, intellij idea</li>
+                        <li>mysql, sql</li>
+                        <li>resolución de problemas</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="seccion-animada">
+            <h3>contacto</h3>
+            <hr>
+            <p>
+                <strong>email:</strong> correo@ejemplo.com <br>
+                <strong>teléfono:</strong> +56 9 1234 5678 <br>
+                <strong>linkedin:</strong> <a href="#" target="_blank">ver perfil</a>
+            </p>
+            
+            <form id="formulario-contacto">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">nombre completo</label>
+                    <input type="text" class="form-control" id="nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">correo electrónico</label>
+                    <input type="email" class="form-control" id="email" required>
+                    <div class="invalid-feedback">ingresa un correo válido.</div>
+                    <div class="valid-feedback">formato correcto.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">mensaje</label>
+                    <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">enviar mensaje</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer id="pie-pagina">
+        <p>&copy; 2026 Daniela Torres Beltrán</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

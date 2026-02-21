@@ -1,0 +1,146 @@
+/* --- variables globales --- */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #212529;
+    --nav-bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --border-color: #dee2e6;
+    --primary-color: #0d6efd;
+}
+
+/* --- estilos generales del cuerpo --- */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0;
+    padding-top: 80px; /* espacio para la navbar fija */
+}
+
+/* --- contenedor principal (reemplaza a .container de bootstrap) --- */
+#contenedor-principal {
+    max-width: 960px;
+    margin: 0 auto; /* centrado horizontal */
+    padding: 0 15px;
+}
+
+/* --- navegación --- */
+#barra-navegacion {
+    background-color: var(--nav-bg);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#btn-tema {
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    margin-left: 15px;
+}
+
+/* --- encabezado / header --- */
+#inicio {
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+#inicio h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+#inicio h2 {
+    color: #6c757d; /* color gris suave */
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+#foto-perfil {
+    border-radius: 50%; /* hace la imagen redonda */
+    border: 3px solid var(--border-color);
+    margin-bottom: 1rem;
+}
+
+/* --- secciones generales --- */
+section {
+    margin-bottom: 4rem; /* espacio entre secciones */
+}
+
+section h3 {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* --- tarjetas de experiencia --- */
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    margin-bottom: 1.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.card-subtitle {
+    color: #6c757d;
+    margin-bottom: 0.75rem;
+}
+
+/* --- sección habilidades --- */
+#habilidades {
+    padding: 2rem;
+    border-radius: 8px;
+    /* el color de fondo se maneja con js o por defecto es transparente */
+}
+
+#encabezado-habilidades {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#btn-color {
+    background-color: #ffc107;
+    border: none;
+    color: #000;
+}
+
+/* --- formulario --- */
+#formulario-contacto {
+    margin-top: 1.5rem;
+    max-width: 600px;
+}
+
+/* --- footer --- */
+#pie-pagina {
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 3rem;
+    background-color: var(--nav-bg);
+    border-top: 1px solid var(--border-color);
+}
+
+/* --- clases para animaciones y estados (usadas por js) --- */
+
+/* modo oscuro */
+body.dark-mode {
+    --bg-color: #212529;
+    --text-color: #f8f9fa;
+    --nav-bg: #343a40;
+    --card-bg: #2c3034;
+    --border-color: #495057;
+}
+
+/* animación al hacer scroll */
+.seccion-animada {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
