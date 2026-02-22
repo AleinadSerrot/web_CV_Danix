@@ -1,43 +1,45 @@
 /* --- variables globales --- */
 :root {
     --bg-color: #ffffff;
-    --text-color: #212529;
-    --nav-bg: #f8f9fa;
+    --text-color: #362e2e;
+    --nav-bg: #fff5b9;
     --card-bg: #ffffff;
     --border-color: #dee2e6;
-    --primary-color: #0d6efd;
+    --primary-color: #ffc400;
 }
 
-/* --- estilos generales del cuerpo --- */
+/* estilos generales del cuerpo */
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
     transition: background-color 0.3s ease, color 0.3s ease;
     margin: 0;
     padding-top: 80px; /* espacio para la navbar fija */
 }
 
-/* --- contenedor principal (reemplaza a .container de bootstrap) --- */
+/*  contenedor principal */
 #contenedor-principal {
     max-width: 960px;
     margin: 0 auto; /* centrado horizontal */
     padding: 0 15px;
 }
 
-/* --- navegación --- */
+/* navegación */
 #barra-navegacion {
     background-color: var(--nav-bg);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
 }
 
 #btn-tema {
     border: 1px solid var(--text-color);
     color: var(--text-color);
     margin-left: 15px;
+
 }
 
-/* --- encabezado / header --- */
+/* encabezado */
 #inicio {
     text-align: center;
     margin-top: 3rem;
@@ -45,36 +47,42 @@ body {
 }
 
 #inicio h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
 
 #inicio h2 {
-    color: #6c757d; /* color gris suave */
+    color: #453833; /* color gris suave */
     font-size: 1.25rem;
     margin-bottom: 1rem;
 }
 
 #foto-perfil {
+    width: 150px;
+    max-width: 100%;
+    height: auto;
     border-radius: 50%; /* hace la imagen redonda */
     border: 3px solid var(--border-color);
     margin-bottom: 1rem;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+
 }
 
-/* --- secciones generales --- */
+/* secciones generales */
 section {
-    margin-bottom: 4rem; /* espacio entre secciones */
+    margin-bottom: 2rem; /* espacio entre secciones */
 }
 
 section h3 {
     color: var(--primary-color);
     text-transform: uppercase;
-    font-size: 1.5rem;
+    font-size: 0.9rem;
     margin-bottom: 1rem;
 }
 
-/* --- tarjetas de experiencia --- */
+/* tarjetas de experiencia */
 .card {
     background-color: var(--card-bg);
     border: 1px solid var(--border-color);
@@ -83,37 +91,18 @@ section h3 {
 }
 
 .card-subtitle {
-    color: #6c757d;
+    color: #7d7c6c;
     margin-bottom: 0.75rem;
 }
 
-/* --- sección habilidades --- */
-#habilidades {
-    padding: 2rem;
-    border-radius: 8px;
-    /* el color de fondo se maneja con js o por defecto es transparente */
-}
 
-#encabezado-habilidades {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1rem;
-}
-
-#btn-color {
-    background-color: #ffc107;
-    border: none;
-    color: #000;
-}
-
-/* --- formulario --- */
+/* formulario */
 #formulario-contacto {
     margin-top: 1.5rem;
     max-width: 600px;
 }
 
-/* --- footer --- */
+/* footer */
 #pie-pagina {
     text-align: center;
     padding: 2rem 0;
@@ -122,7 +111,7 @@ section h3 {
     border-top: 1px solid var(--border-color);
 }
 
-/* --- clases para animaciones y estados (usadas por js) --- */
+/* clases para animaciones y estados (usadas por js) */
 
 /* modo oscuro */
 body.dark-mode {
@@ -136,8 +125,8 @@ body.dark-mode {
 /* animación al hacer scroll */
 .seccion-animada {
     opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    transform: translateY(100px);
+    transition: opacity 1.2s ease-out, transform 1.2s ease-out; 
 }
 
 .visible {
