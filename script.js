@@ -1,6 +1,6 @@
 $(document).ready(function() {
     
-    // --- 1. cambio de tema claro/oscuro ---
+    // 1. cambio de tema claro/oscuro
     $('#btn-tema').click(function() {
         $('body').toggleClass('dark-mode');
         
@@ -15,11 +15,11 @@ $(document).ready(function() {
         }
     });
 
-    // --- 2. validación de formulario en tiempo real ---
+    // 2. validación de formulario en tiempo real
     $('#email').on('input', function() {
         let valorEmail = $(this).val();
         
-        // si tiene @ y punto, es válido (validación básica)
+    // si tiene @ y punto, es válido (validación básica)
         if (valorEmail.includes('@') && valorEmail.includes('.')) {
             $(this).addClass('is-valid').removeClass('is-invalid');
         } else {
@@ -36,7 +36,7 @@ $(document).ready(function() {
     });
 
    
-    // 3. animación al hacer scroll (javascript vanilla + jquery) ---
+    // 3. animación al hacer scroll 
     $(window).scroll(function() {
         let posicionTop = $(window).scrollTop();
         let alturaVentana = $(window).height();
@@ -45,7 +45,7 @@ $(document).ready(function() {
             let distanciaElemento = $(this).offset().top;
             
             // si el elemento entra en pantalla
-            if (posicionTop + alturaVentana - 50 > distanciaElemento) {
+            if (posicionTop + alturaVentana - 150 > distanciaElemento) {
                 $(this).addClass('visible');
             }
         });

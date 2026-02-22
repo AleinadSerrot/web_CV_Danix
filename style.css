@@ -1,4 +1,4 @@
-/* --- variables globales --- */
+/* variables globales */
 :root {
   --bg-color: #ffffff;
   --text-color: #362e2e;
@@ -8,7 +8,7 @@
   --primary-color: #ffc400;
 }
 
-/* estilos generales del cuerpo */
+/* estilos del cuerpo */
 body {
   background-color: var(--bg-color);
   color: var(--text-color);
@@ -28,7 +28,7 @@ body {
   padding: 0 15px;
 }
 
-/* navegación */
+/* barra de navegación */
 #barra-navegacion {
   background-color: var(--nav-bg);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
@@ -82,7 +82,7 @@ section h3 {
   margin-bottom: 1rem;
 }
 
-/* tarjetas de experiencia */
+/* tarjetas de experiencia laboral*/
 .card {
   background-color: var(--card-bg);
   border: 1px solid var(--border-color);
